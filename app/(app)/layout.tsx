@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { UserThread } from "@prisma/client";
 import Navbar from "@/components/Navbar";
+import { useAtom } from "jotai";
+import { userThreadAtom } from "@/atom";
 
 export default function AppLayout({ children, }: { children: React.ReactNode }) {
-    const [userThread, setUserThread] = useState<UserThread | null>(null);
+    const [, setUserThread] = useAtom(userThreadAtom);
 
     // Fetch the user's thread
     useEffect(() => {
@@ -32,7 +34,7 @@ export default function AppLayout({ children, }: { children: React.ReactNode }) 
         }
 
         getUserThread();
-    }, []);
+    }, [setUserThread]);
 
     return (
         <div className="flex flex-col w-full h-full">
