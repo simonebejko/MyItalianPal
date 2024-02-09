@@ -11,6 +11,8 @@ export default authMiddleware({
         "/api/message/list",
         "/api/run/create",
         "/api/run/retrieve",
+        "/api/text-users",
+        "/api/openai",
     ],
 });
 
