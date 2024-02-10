@@ -17,9 +17,9 @@ function NotificationModal({
       onRequestClose(permission === "granted");
       if (permission === "granted") {
         saveSubscription();
-      } else {
-        toast.error("Something went wrong.");
       }
+    } else {
+      toast.error("Something went wrong.");
     }
   };
 
