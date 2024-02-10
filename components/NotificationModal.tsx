@@ -27,11 +27,10 @@ function NotificationModal({
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg shadow-lg text-center">
         <h2 className="font-bold text-xl mb-4">
-          Allow "MyItalianPal" to send push notifications?
+          Allow MyItalianPal to send push notifications?
         </h2>
         <p className="mb-4">
-          Receive notifications from MyItalianPal for daily Italian lessons and
-          exercises.
+          Accept notifications for daily Italian lessons and exercises.
         </p>
         <button
           className="bg-green-600 text-white py-2 px-4 rounded-lg"
