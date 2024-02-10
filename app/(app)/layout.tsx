@@ -7,10 +7,13 @@ import Navbar from "@/components/Navbar";
 import { useAtom } from "jotai";
 import { assistantAtom, userThreadAtom } from "@/atom";
 import toast, { Toaster } from "react-hot-toast";
+import useServiceWorker from "@/hooks/useServiceWorker";
 
 export default function AppLayout({ children, }: { children: React.ReactNode }) {
     const [, setUserThread] = useAtom(userThreadAtom);
     const [assistant, setAssistant] = useAtom(assistantAtom);
+
+    useServiceWorker();
 
     // Fetch the assistant id
     useEffect (() => {
