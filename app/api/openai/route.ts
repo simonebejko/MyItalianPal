@@ -4,39 +4,36 @@ import OpenAI from "openai";
 const openai = new OpenAI();
 
 export async function POST(request: Request) {
-    const { messages, secret } = await request.json();
+  const { messages, secret } = await request.json();
 
-    if (!messages || !secret) {
-        return NextResponse.json(
-            { success: false, message: "Missing required fields" },
-            { status: 400 }
-        );
-    }
+  if (!messages || !secret) {
+    return NextResponse.json(
+      { success: false, message: "Missing required fields" },
+      { status: 400 }
+    );
+  }
 
-    if (secret !== process.env.APP_SECRET_KEY) {
-        return NextResponse.json(
-            { success: false, message: "Unauthorized" },
-            { status: 401 }
-        );
-    }
+  if (secret !== process.env.APP_SECRET_KEY) {
+    return NextResponse.json(
+      { success: false, message: "Unauthorized" },
+      { status: 401 }
+    );
+  }
 
-    try {
-        const completion = await openai.chat.completions.create({
-            messages,
-            model: "gpt-3.5-turbo",
-        });
+  try {
+    const completion = await openai.chat.completions.create({
+      messages,
+      model: "gpt-3.5-turbo",
+    });
 
-        const newMessage = completion.choices[0].message.content;
+    const newMessage = completion.choices[0].message.content;
 
-        return NextResponse.json(
-            { success: true, message: newMessage },
-            { status: 200 }
-        );
-    } catch (error) {
-        console.log(error);
-        return NextResponse.json(
-            { success: false },
-            { status: 500 }
-        );
-    }
+    return NextResponse.json(
+      { success: true, message: newMessage },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.log(error);
+    return NextResponse.json({ success: false }, { status: 500 });
+  }
 }

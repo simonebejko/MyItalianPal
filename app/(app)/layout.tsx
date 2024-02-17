@@ -80,7 +80,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if ("Notification" in window) {
       setIsNotificationModalVisible(Notification.permission === "default");
-      console.log("Notificaton permission:", Notification.permission);
+      console.log("Notification permission:", Notification.permission);
     }
   }, []);
 

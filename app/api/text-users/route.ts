@@ -43,7 +43,7 @@ export async function POST(request: Request) {
             You MUST mimick the style of texting between friends.
             You MUST communicate in a relaxed, informal manner:
             text should often be uncapitalized, use abbreviations
-            (e.g. "lol"), use slang and emojis common in text messaging.
+            and text slang (e.g. "lol").
             You MUST blend English and Italian (code-switching).
             `,
     },
@@ -51,13 +51,6 @@ export async function POST(request: Request) {
       role: "user",
       content: `
             Generate a short Italian lesson and/or exercise message for the user.
-            It can include vocabulary, grammar explanations, phrases,
-            or exercises. You must:
-            - Avoid very basic topics (e.g. teaching how to say "Good Morning" or "Hello").
-            - Speak as if you are texting (abbreviations such as "lol", emojis, etc),
-              but do NOT use too many emojis (one or two is fine).
-            - Code-switch between English and Italian, but use more English than Italian.
-            - The message MUST follow the instructions provided beforehand.
             `,
     },
   ];
@@ -185,5 +178,3 @@ export async function POST(request: Request) {
     );
   }
 }
-
-// TODO: Send PWA notification to user

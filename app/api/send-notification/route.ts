@@ -9,8 +9,8 @@ webPush.setVapidDetails(
 
 export async function POST(request: Request) {
   const { subscription, message } = await request.json();
+  console.log("Sending push notification to", subscription, message);
 
-  console.log("Sending push notification to", subscription);
   try {
     await webPush.sendNotification(subscription, message);
     return NextResponse.json({ success: true });
