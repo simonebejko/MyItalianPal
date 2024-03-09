@@ -42,6 +42,8 @@ export async function POST(request: Request) {
         Provide an Italian language learning lesson
         and a corresponding exercise for daily practice,
         as a friendly, informal Italian language tutor.
+        You must NOT teach trivial vocabulary (e.g. how to say
+        "hello" or "how are you").
         Mimick the style of texting between friends.
         (relaxed, informal manner, text slang/abbreviations).
         Mix English and Italian.

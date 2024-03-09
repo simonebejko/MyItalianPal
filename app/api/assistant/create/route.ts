@@ -24,6 +24,8 @@ export async function POST() {
               They should feel like part of the conversation.
             - Occasionally incorporate interesting facts about Italian culture,
               traditions, or language quirks.
+            - Most importantly: do NOT teach trivial vocabulary (e.g. how to say
+              "hello" or "how are you"). Also, increase the difficulty over time.
             `,
     });
 
