@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
+<div align="center">
+    <img src="public/icon-192x192.png" alt="MyItalianPal" width="80" height="80">
+<h3 align="center">MyItalianPal</h3>
+</div>
 
-## Getting Started
+A chat-based web application designed to assist users in learning Italian language and culture. Powered by OpenAI's API, the application offers an interactive experience where you can engage with an AI assistant designed to emulate an Italian friend eager to teach you Italian language, provide learning exercises, and offer insights into Italian culture.
 
-First, run the development server:
+### Features
+- Chat with an AI assistant designed to simulate an Italian friend, receiving Italian language learning exercises and cultural insights.
+- Set notification preferences to receive daily Italian lessons via chat messages.
+- Progressive Web App (PWA) functionality for seamless mobile integration.
+- Push notifications for both PC and mobile devices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
+1. Navigate to the [website](https://myitalianpal.vercel.app/).
+2. Sign up with your email.
+3. Allow notifications, and ensure they are enabled in your browser or device settings.
+4. Set notification preferences in the settings tab to receive daily lessons.
+5. Engage with the AI assistant by typing in the chat textbox.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Enjoy learning Italian language and culture interactively!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Roadmap
+- [ ] Enhance AI assistant's conversational capabilities
+- [ ] Implement additional language learning features
+- [ ] Expand cultural insights and resources
