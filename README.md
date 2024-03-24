@@ -1,16 +1,16 @@
 ## About
 <div align="center">
     <img src="public/icon-192x192.png" alt="MyItalianPal" width="80" height="80">
-<h3 align="center">MyItalianPal</h3>
+<p align="center" style="font-size: 20px;"><b>MyItalianPal</b></p>
 </div>
 
 A chat-based web application designed to assist users in learning Italian language and culture. Powered by OpenAI's API, the application offers an interactive experience where you can engage with an AI assistant designed to emulate an Italian friend eager to teach you Italian language, provide learning exercises, and offer insights into Italian culture.
 
 ### Features
-- Chat with an AI assistant designed to simulate an Italian friend, receiving Italian language learning exercises and cultural insights.
-- Set notification preferences to receive daily Italian lessons via chat messages.
-- Progressive Web App (PWA) functionality for seamless mobile integration.
-- Push notifications for both PC and mobile devices.
+- Chat with an AI assistant designed to simulate an Italian friend, receiving Italian language learning exercises and cultural insights
+- Set notification preferences to receive daily Italian lessons via chat messages
+- Progressive Web App (PWA) functionality for seamless mobile integration
+- Push notifications for both PC and mobile devices
 
 ## Usage
 1. Navigate to the [website](https://myitalianpal.vercel.app/).
